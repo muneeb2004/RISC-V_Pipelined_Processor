@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/adder64.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/alu64bit.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/aluControl.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/branchUnit.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/controlUnit.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/datamemory.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/instructionParser.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/main_processor.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/multiplexer.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/programCounter.v" \
+"../../../../Single Cycle Processor.srcs/sources_1/new/registerFile.v" \
+"../../../../Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
