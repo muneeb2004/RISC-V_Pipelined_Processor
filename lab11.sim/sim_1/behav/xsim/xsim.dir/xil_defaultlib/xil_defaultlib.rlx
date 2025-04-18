@@ -1,0 +1,27 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Habib Uni/Sem 4/CA/Project/lab11.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sim_1/new/Control_Unit_TB.v,1744303994,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Data_Memory.v,,Control_Unit_TB,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sim_1/new/RISC_V_Processor_tb.v,1744871056,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/alu_control.v,,tb_Pipeline,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sim_1/new/tb_RISC_V_Processor.v,1744952379,verilog,,,,tb_RISC_V_Processor,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sim_1/new/tb_RegisterFile.v,1744870597,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sim_1/new/tb_instruction_parser.v,,tb_RegisterFile,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/ALU_64_bit.v,1744869196,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Adder.v,,ALU_64_bit,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Adder.v,1744303994,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Branch.v,,Adder,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Branch.v,1744868680,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Control_Unit.v,,Branch,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Control_Unit.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Data_Memory.v,,Control_Unit,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Data_Memory.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/EX_MEM.v,,Data_Memory,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/EX_MEM.v,1744952690,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/ID_EX.v,,EX_MEM,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/ID_EX.v,1744952701,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/IF_ID.v,,ID_EX,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/IF_ID.v,1744952712,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Instruction_Memory.v,,IF_ID,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Instruction_Memory.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/MEM_WB.v,,Instruction_Memory,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/MEM_WB.v,1744869970,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Program_Counter.v,,MEM_WB,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/Program_Counter.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/RISC_V_Processor.v,,Program_Counter,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/RISC_V_Processor.v,1744871441,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/alu_control.v,,RISC_V_Processor,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/alu_control.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/immediate_data_extractor.v,,alu_control,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/immediate_data_extractor.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/instruction_parser.v,,immediate_data_extractor,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/instruction_parser.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/mux.v,,instruction_parser,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/mux.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/registerFile.v,,mux,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/registerFile.v,1744870765,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/top_control.v,,registerFile,,,,,,,,
+D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sources_1/new/top_control.v,1744303995,verilog,,D:/Habib Uni/Sem 4/CA/Project/lab11.srcs/sim_1/new/tb_RISC_V_Processor.v,,top_control,,,,,,,,
