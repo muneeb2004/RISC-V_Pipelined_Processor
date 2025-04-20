@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Apr 19 18:44:44 2025
+# Process ID: 19368
+# Current directory: D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20848 D:\Habib Uni\Sem 4\CA\CA Project Task 1 by Hassan Shehzad\Single Cycle Processor.xpr
+# Log file: D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/vivado.log
+# Journal file: D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close [ open {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/IF_ID.v} w ]
+add_files {{D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/IF_ID.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/ID_EX.v} w ]
+add_files {{D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/ID_EX.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v} w ]
+add_files {{D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v} w ]
+add_files {{D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v}}
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+save_wave_config {D:/Habib Uni/Sem 4/CA/CA Project Task 1 by Hassan Shehzad/tb_MainProcessor_behav.wcfg}
+close_sim
