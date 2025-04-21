@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_MainProcessor_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_MainProcessor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="20201fs"></ZoomEndTime>
+      <Cursor1Time time="10980fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/tb_MainProcessor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/pc_in" type="array">
+      <obj_property name="ElementShortName">pc_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/pc_out" type="array">
+      <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/alu_op" type="array">
+      <obj_property name="ElementShortName">alu_op[1:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/alu_src" type="logic">
+      <obj_property name="ElementShortName">alu_src</obj_property>
+      <obj_property name="ObjectShortName">alu_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/imm" type="array">
+      <obj_property name="ElementShortName">imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/rs1_data" type="array">
+      <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/rs2_data" type="array">
+      <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/next_ins_address" type="array">
+      <obj_property name="ElementShortName">next_ins_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_ins_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/alu_second_operand" type="array">
+      <obj_property name="ElementShortName">alu_second_operand[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_second_operand[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/alu_result" type="array">
+      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/array_out0" type="array">
+      <obj_property name="ElementShortName">array_out0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">array_out0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/RS_1" type="array">
+      <obj_property name="ElementShortName">RS_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RS_1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/RS_2" type="array">
+      <obj_property name="ElementShortName">RS_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RS_2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/rdMem" type="array">
+      <obj_property name="ElementShortName">rdMem[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rdMem[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/rdWb" type="array">
+      <obj_property name="ElementShortName">rdWb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rdWb[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/regWrite_Wb" type="logic">
+      <obj_property name="ElementShortName">regWrite_Wb</obj_property>
+      <obj_property name="ObjectShortName">regWrite_Wb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/regWrite_Mem" type="logic">
+      <obj_property name="ElementShortName">regWrite_Mem</obj_property>
+      <obj_property name="ObjectShortName">regWrite_Mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/Forward_A" type="array">
+      <obj_property name="ElementShortName">Forward_A[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Forward_A[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MainProcessor/mp/fwd/Forward_B" type="array">
+      <obj_property name="ElementShortName">Forward_B[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Forward_B[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
