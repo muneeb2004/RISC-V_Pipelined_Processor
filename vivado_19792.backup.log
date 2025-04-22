@@ -1,0 +1,1557 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Apr 21 22:00:27 2025
+# Process ID: 19792
+# Current directory: D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19856 D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.xpr
+# Log file: D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/vivado.log
+# Journal file: D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/ms09070/Downloads/pipline task2 new/Single Cycle Processor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado_DLD/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.836 ; gain = 0.000
+update_compile_order -fileset sources_1
+close [ open {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v} w ]
+add_files {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'array_out6' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v:34]
+ERROR: [VRFC 10-3180] cannot find port 'array_out5' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v:33]
+ERROR: [VRFC 10-3180] cannot find port 'array_out4' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v:32]
+ERROR: [VRFC 10-3180] cannot find port 'array_out3' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v:31]
+ERROR: [VRFC 10-3180] cannot find port 'array_out2' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v:30]
+ERROR: [VRFC 10-3180] cannot find port 'array_out1' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v:29]
+ERROR: [VRFC 10-3180] cannot find port 'array_out0' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v:28]
+ERROR: [VRFC 10-3180] cannot find port 'funct_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:102]
+ERROR: [VRFC 10-3180] cannot find port 'mux_rd2_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:101]
+ERROR: [VRFC 10-3180] cannot find port 'adder_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:100]
+ERROR: [VRFC 10-3180] cannot find port 'branch_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:99]
+ERROR: [VRFC 10-3180] cannot find port 'funct_ID_EX' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:98]
+ERROR: [VRFC 10-3180] cannot find port 'branch_ins_address' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:97]
+ERROR: [VRFC 10-3180] cannot find port 'mem_read_ID_EX' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:96]
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_ID_EX' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:95]
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_MEM_WB' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:110]
+ERROR: [VRFC 10-3180] cannot find port 'rd_MEM_WB' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:109]
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:108]
+ERROR: [VRFC 10-3180] cannot find port 'alu_result_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:107]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.836 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'funct_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:102]
+ERROR: [VRFC 10-3180] cannot find port 'mux_rd2_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:101]
+ERROR: [VRFC 10-3180] cannot find port 'adder_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:100]
+ERROR: [VRFC 10-3180] cannot find port 'branch_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:99]
+ERROR: [VRFC 10-3180] cannot find port 'funct_ID_EX' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:98]
+ERROR: [VRFC 10-3180] cannot find port 'branch_ins_address' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:97]
+ERROR: [VRFC 10-3180] cannot find port 'mem_read_ID_EX' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:96]
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_ID_EX' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:95]
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_MEM_WB' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:110]
+ERROR: [VRFC 10-3180] cannot find port 'rd_MEM_WB' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:109]
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:108]
+ERROR: [VRFC 10-3180] cannot find port 'alu_result_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:107]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.836 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'rd_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:99]
+ERROR: [VRFC 10-3180] cannot find port 'alu_result_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:98]
+ERROR: [VRFC 10-3180] cannot find port 'memread_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:97]
+ERROR: [VRFC 10-3180] cannot find port 'branch_EX_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:96]
+ERROR: [VRFC 10-3180] cannot find port 'rd_in' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:95]
+ERROR: [VRFC 10-3180] cannot find port 'alu_result_in' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:94]
+ERROR: [VRFC 10-3180] cannot find port 'memread_in' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:93]
+ERROR: [VRFC 10-3180] cannot find port 'branch_in' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:92]
+ERROR: [VRFC 10-3180] cannot find port 'regwrite_MEM_WB' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:108]
+ERROR: [VRFC 10-3180] cannot find port 'alu_result_MEM_WB' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:107]
+ERROR: [VRFC 10-3180] cannot find port 'rd_in' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:105]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.836 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.836 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1024.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.836 ; gain = 0.000
+save_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1024.836 ; gain = 0.000
+save_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1765.219 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:295]
+ERROR: [VRFC 10-3180] cannot find port 'reg_write_EX' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:294]
+ERROR: [VRFC 10-3180] cannot find port 'rd_MEM' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:293]
+ERROR: [VRFC 10-3180] cannot find port 'branch_ID' on this module [D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v:292]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" Line 75. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" Line 75. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1765.219 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" Line 75. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" Line 75. Module EX_MEM doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1765.219 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2243.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2243.945 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {30000ns} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\hazardDetectionUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\EX_MEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sim_1\new\tb_MainProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\main_processor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\hazardDetectionUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\EX_MEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sim_1\new\tb_MainProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\main_processor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\hazardDetectionUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\EX_MEM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sim_1\new\tb_MainProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.srcs\sources_1\new\main_processor.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MainProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MainProcessor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/adder64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/alu64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/aluControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/branchUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/dataExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/datamemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/forwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/instructionParser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionParser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/main_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/three_input_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_input_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sim_1/new/tb_MainProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MainProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+"xelab -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_DLD/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 08f1fc4cc3bc4a108f7662e8d5bc6a34 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MainProcessor_behav xil_defaultlib.tb_MainProcessor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.multiplexer
+Compiling module xil_defaultlib.adder64
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.instructionParser
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.dataExtractor
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.hazardDetectionUnit
+Compiling module xil_defaultlib.three_input_mux
+Compiling module xil_defaultlib.forwardingUnit
+Compiling module xil_defaultlib.aluControl
+Compiling module xil_defaultlib.alu64bit
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.branchUnit
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.main_processor
+Compiling module xil_defaultlib.tb_MainProcessor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MainProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MainProcessor_behav -key {Behavioral:sim_1:Functional:tb_MainProcessor} -tclbatch {tb_MainProcessor.tcl} -view {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MainProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 30000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2243.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 22 00:46:07 2025...

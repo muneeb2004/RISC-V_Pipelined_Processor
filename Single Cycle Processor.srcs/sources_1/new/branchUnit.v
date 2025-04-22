@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+
 module branchUnit(
     input [2:0] funct3,
     input [31:0] result,

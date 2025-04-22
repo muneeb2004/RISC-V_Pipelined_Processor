@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+
 module registerFile(
     input [31:0] write_data,
     input [4:0] rs1,
@@ -18,15 +19,8 @@ module registerFile(
         // project
         registers[0] = 0;
         for (i = 1; i < 32; i = i + 1)
-            registers[i] = i + 32'b1;
-            
-        // lab 
-//        for (i = 0; i < 63; i = i + 1)
-//            registers[i] = i;
-        
+            registers[i] = i + 32'b1;      
     end
-    
-//    always registers[0] <= 0;
     
     always @(posedge clk) begin
         if (reg_write)

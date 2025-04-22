@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Apr 21 22:00:27 2025
+# Process ID: 19792
+# Current directory: D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19856 D:\Habib Uni\Sem 4\CA\final task 2\pipline task2 new\Single Cycle Processor\Single Cycle Processor.xpr
+# Log file: D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/vivado.log
+# Journal file: D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.xpr}
+update_compile_order -fileset sources_1
+close [ open {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v} w ]
+add_files {{D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/Single Cycle Processor.srcs/sources_1/new/hazardDetectionUnit.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+save_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+save_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+set_property -name {xsim.simulate.runtime} -value {30000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config {D:/Habib Uni/Sem 4/CA/final task 2/pipline task2 new/Single Cycle Processor/tb_MainProcessor_behav.wcfg}
+source tb_MainProcessor.tcl
+close_sim

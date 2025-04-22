@@ -2,7 +2,7 @@
 
 module ID_EX(
     input clk, reset,
-    input flush,  // New flush input
+    input flush,
     input [31:0] pc_in,
     input [31:0] read_data1_in,
     input [31:0] read_data2_in,
@@ -26,26 +26,7 @@ module ID_EX(
     output reg [1:0] aluop
 );
 
-initial begin
-    pc_out <= 32'b0;
-    rs1 <= 5'b0;
-    rs2 <= 5'b0;
-    rd <= 5'b0;
-    imm_data <= 32'b0;
-    readdata1 <= 32'b0;
-    readdata2 <= 32'b0;
-    funct_out <= 4'b0;
-    Branch <= 1'b0;
-    Memread <= 1'b0;
-    Memtoreg <= 1'b0;
-    Memwrite <= 1'b0;
-    Regwrite <= 1'b0;
-    Alusrc <= 1'b0;
-    aluop <= 2'b0;
-end  
-
-always @(posedge clk) begin
-    if (reset) begin
+    initial begin
         pc_out <= 32'b0;
         rs1 <= 5'b0;
         rs2 <= 5'b0;
@@ -61,38 +42,57 @@ always @(posedge clk) begin
         Regwrite <= 1'b0;
         Alusrc <= 1'b0;
         aluop <= 2'b0;
-    end else if (flush) begin  // Insert NOP on flush
-        pc_out <= 32'b0;
-        rs1 <= 5'b0;
-        rs2 <= 5'b0;
-        rd <= 5'b0;
-        imm_data <= 32'b0;
-        readdata1 <= 32'b0;
-        readdata2 <= 32'b0;
-        funct_out <= 4'b0;
-        Branch <= 1'b0;
-        Memread <= 1'b0;
-        Memtoreg <= 1'b0;
-        Memwrite <= 1'b0;
-        Regwrite <= 1'b0;
-        Alusrc <= 1'b0;
-        aluop <= 2'b0;
-    end else begin
-        pc_out <= pc_in;
-        rs1 <= rs1_in;
-        rs2 <= rs2_in;
-        rd <= rd_in;
-        imm_data <= imm_input;
-        readdata1 <= read_data1_in;
-        readdata2 <= read_data2_in;
-        funct_out <= funct_in; 
-        Branch <= branch_in;
-        Memread <= memread_in;
-        Memtoreg <= memtoreg_in;
-        Memwrite <= memwrite_in;
-        Regwrite <= regwrite_in;
-        Alusrc <= aluSrc_in;
-        aluop <= Aluop_in;
+    end  
+    
+    always @(posedge clk) begin
+        if (reset) begin
+            pc_out <= 32'b0;
+            rs1 <= 5'b0;
+            rs2 <= 5'b0;
+            rd <= 5'b0;
+            imm_data <= 32'b0;
+            readdata1 <= 32'b0;
+            readdata2 <= 32'b0;
+            funct_out <= 4'b0;
+            Branch <= 1'b0;
+            Memread <= 1'b0;
+            Memtoreg <= 1'b0;
+            Memwrite <= 1'b0;
+            Regwrite <= 1'b0;
+            Alusrc <= 1'b0;
+            aluop <= 2'b0;
+        end else if (flush) begin  // Insert NOP on flush
+            pc_out <= 32'b0;
+            rs1 <= 5'b0;
+            rs2 <= 5'b0;
+            rd <= 5'b0;
+            imm_data <= 32'b0;
+            readdata1 <= 32'b0;
+            readdata2 <= 32'b0;
+            funct_out <= 4'b0;
+            Branch <= 1'b0;
+            Memread <= 1'b0;
+            Memtoreg <= 1'b0;
+            Memwrite <= 1'b0;
+            Regwrite <= 1'b0;
+            Alusrc <= 1'b0;
+            aluop <= 2'b0;
+        end else begin
+            pc_out <= pc_in;
+            rs1 <= rs1_in;
+            rs2 <= rs2_in;
+            rd <= rd_in;
+            imm_data <= imm_input;
+            readdata1 <= read_data1_in;
+            readdata2 <= read_data2_in;
+            funct_out <= funct_in; 
+            Branch <= branch_in;
+            Memread <= memread_in;
+            Memtoreg <= memtoreg_in;
+            Memwrite <= memwrite_in;
+            Regwrite <= regwrite_in;
+            Alusrc <= aluSrc_in;
+            aluop <= Aluop_in;
+        end
     end
-end
 endmodule

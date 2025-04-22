@@ -15,4 +15,5 @@ module tb_MainProcessor();
         begin
             clk <= 1; #1; clk <= 0; #1;
         end    
+        
 endmodule

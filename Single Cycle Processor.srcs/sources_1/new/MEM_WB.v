@@ -13,31 +13,31 @@ module MEM_WB(
 );
  
  
-initial begin
-readdata <= 31'b0;
-          result_alu_out <= 31'b0;
-          rd <= 5'b0;
-          Memtoreg <= 1'b0;
-          Regwrite <= 1'b0;
-end
-  always @(posedge clk)
-    begin
-      if (reset == 1'b1)
-        begin
-          readdata <= 313'b0;
-          result_alu_out <= 31'b0;
-          rd <= 5'b0;
-          Memtoreg <= 1'b0;
-          Regwrite <= 1'b0;
-          
-        end
-      else
-        begin
-         readdata <= read_data_in;
-          result_alu_out <= result_alu_in;
-          rd <= Rd_in;
-          Memtoreg <= memtoreg_in;
-          Regwrite <= regwrite_in;
-        end
+    initial begin
+    readdata <= 31'b0;
+              result_alu_out <= 31'b0;
+              rd <= 5'b0;
+              Memtoreg <= 1'b0;
+              Regwrite <= 1'b0;
     end
+      always @(posedge clk)
+        begin
+          if (reset == 1'b1)
+            begin
+              readdata <= 313'b0;
+              result_alu_out <= 31'b0;
+              rd <= 5'b0;
+              Memtoreg <= 1'b0;
+              Regwrite <= 1'b0;
+              
+            end
+          else
+            begin
+             readdata <= read_data_in;
+              result_alu_out <= result_alu_in;
+              rd <= Rd_in;
+              Memtoreg <= memtoreg_in;
+              Regwrite <= regwrite_in;
+            end
+        end
 endmodule
